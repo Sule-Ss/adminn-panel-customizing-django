@@ -1,0 +1,54 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+
+{% block branding %}
+    <div class="myDiv">
+    <img src="{% static 'admin/img/default.png' %}" style="height: 50px; width: 50px; margin-right:1rem;" alt="">
+    <h1 id="head">
+        Sule's Admin Site
+    </h1>
+    </div>
+{% endblock %}
+{% block extrastyle %}
+    <style>
+        #header {
+            height: 50px;
+            background: #542380;
+            color: #fff;
+        }
+       
+
+        #branding h1 {
+            color: #fff;
+        }
+
+        a:link,
+        a:visited {
+            color: #10284e;
+        }
+
+        div.breadcrumbs {
+            background: #542380;
+            color: white;
+        }
+
+        div.breadcrumbs a {
+            color: white;
+        }
+
+        .module h2, .module caption, .inline-group h2 {
+            background: #542380;
+        }
+
+        .button, input[type=submit], input[type=button], .submit-row input, a.button {
+            background: #10284e;
+            color: #fff;
+        }
+        div.myDiv {
+            display: flex;
+            align-items: center;
+        }
+
+    </style>
+{% endblock %}
